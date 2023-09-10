@@ -14,7 +14,7 @@ import type { Job, JobWithId } from './Job';
 import type { Agenda } from './index';
 import type { IDatabaseOptions, IDbConfig, IMongoOptions } from './types/DbOptions';
 import type { IJobParameters } from './types/JobParameters';
-import { hasMongoProtocol } from './utils/hasMongoProtocol';
+import { hasMongoProtocol } from './utils/hasMongoProtocol.js';
 
 const log = debug('agenda:db');
 

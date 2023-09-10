@@ -3,8 +3,8 @@ import type { IAgendaJobStatus, IAgendaStatus } from './types/AgendaStatus';
 import type { IJobDefinition } from './types/JobDefinition';
 import type { Agenda, JobWithId } from './index';
 import type { IJobParameters } from './types/JobParameters';
-import { Job } from './Job';
-import { JobProcessingQueue } from './JobProcessingQueue';
+import { Job } from './Job.js';
+import { JobProcessingQueue } from './JobProcessingQueue.js';
 
 const log = debug('agenda:jobProcessor');
 
