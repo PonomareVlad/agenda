@@ -3,7 +3,7 @@ import { DateTime } from 'luxon';
 import * as date from 'date.js';
 import * as debug from 'debug';
 import { parseExpression } from 'cron-parser';
-import humanInterval = require('human-interval');
+import humanInterval from 'human-interval';
 import { isValidDate } from './isValidDate';
 import type { IJobParameters } from '../types/JobParameters';
 

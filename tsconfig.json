@@ -4,10 +4,12 @@
 		"rootDir": "./src",
 
 		// target settings for node 10
-		"module": "commonjs",
+		"module": "ESNext",
 		"target": "es2019",
 		"lib": ["es2019"],
     // "lib": ["esnext", "esnext.asynciterable", "dom"],
+
+    "allowSyntheticDefaultImports": true,
 
 		// other best practice configs
 		"moduleResolution": "node",
