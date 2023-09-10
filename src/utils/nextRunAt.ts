@@ -2,12 +2,14 @@
 import { DateTime } from 'luxon';
 import * as date from 'date.js';
 import * as debug from 'debug';
-import { parseExpression } from 'cron-parser';
+import cronParser from 'cron-parser';
 import humanInterval from 'human-interval';
 import { isValidDate } from './isValidDate.js';
 import type { IJobParameters } from '../types/JobParameters';
 
 const log = debug('agenda:nextRunAt');
+
+const { parseExpression } = cronParser;
 
 const dateForTimezone = (timezoneDate: Date, timezone?: string): DateTime =>
 	DateTime.fromJSDate(timezoneDate, { zone: timezone });
