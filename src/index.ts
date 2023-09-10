@@ -571,12 +571,12 @@ export class Agenda extends EventEmitter {
 	}
 }
 
-export * from './types/AgendaConfig';
+export * from './types/AgendaConfig.js';
 
-export * from './types/JobDefinition';
+export * from './types/JobDefinition.js';
 
-export * from './types/JobParameters';
+export * from './types/JobParameters.js';
 
-export * from './types/DbOptions';
+export * from './types/DbOptions.js';
 
-export * from './Job';
+export * from './Job.js';
