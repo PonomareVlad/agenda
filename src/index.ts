@@ -9,12 +9,12 @@ import type { IAgendaConfig } from './types/AgendaConfig';
 import type { IDatabaseOptions, IDbConfig, IMongoOptions } from './types/DbOptions';
 import type { IAgendaStatus } from './types/AgendaStatus';
 import type { IJobParameters } from './types/JobParameters';
-import { Job, JobWithId } from './Job';
-import { JobDbRepository } from './JobDbRepository';
-import { JobPriority, parsePriority } from './utils/priority';
-import { JobProcessor } from './JobProcessor';
-import { calculateProcessEvery } from './utils/processEvery';
-import { getCallerFilePath } from './utils/stack';
+import { Job, JobWithId } from './Job.js';
+import { JobDbRepository } from './JobDbRepository.js';
+import { JobPriority, parsePriority } from './utils/priority.js';
+import { JobProcessor } from './JobProcessor.js';
+import { calculateProcessEvery } from './utils/processEvery.js';
+import { getCallerFilePath } from './utils/stack.js';
 
 const log = debug('agenda');
 
